@@ -198,3 +198,12 @@ Tests:       22 passed, 22 total
 Time:        2.289 s
 Ran all test suites.
 \`\`\`
+
+
+---
+
+## 👨‍🏫 Teacher Module (Feature Branch: feature/teacher-attendance)
+- Attendance register with Present / Absent / Late marking
+- Same-day attendance edit policy enforced
+- Marks entry for Quiz, Assignment, Midterm and Final with grade calculation
+- Assignment upload and submission grading
