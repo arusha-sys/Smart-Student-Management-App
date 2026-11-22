@@ -1,0 +1,38 @@
+{
+  "name": "smart-student-management-backend",
+  "version": "1.0.0",
+  "description": "Smart Student Management System - Backend (Node.js + Express + MVC + Design Patterns)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node database/seeder.js",
+    "test": "jest --runInBand --detectOpenHandles --forceExit"
+  },
+  "keywords": ["student-management", "express", "design-patterns", "mvc"],
+  "author": "SCD Project Team",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "pdfkit": "^0.15.0",
+    "sqlite3": "^5.1.7",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true,
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
+  }
+}

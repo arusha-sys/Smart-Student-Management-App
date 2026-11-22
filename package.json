@@ -1,0 +1,27 @@
+{
+  "name": "smart-student-management-system",
+  "version": "1.0.0",
+  "description": "Smart Student Management System - SCD Semester Project with Design Patterns",
+  "scripts": {
+    "start": "node backend/server.js",
+    "seed": "node backend/database/seeder.js",
+    "test": "cd backend && npm test",
+    "build:frontend": "cd frontend && npm run build",
+    "dev:backend": "cd backend && npm start",
+    "dev:frontend": "cd frontend && npm run dev"
+  },
+  "keywords": [
+    "mvc",
+    "repository-pattern",
+    "factory-pattern",
+    "strategy-pattern",
+    "observer-pattern",
+    "singleton-pattern",
+    "express",
+    "react",
+    "vite",
+    "tailwind"
+  ],
+  "author": "SCD Project Team",
+  "license": "ISC"
+}
