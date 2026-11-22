@@ -154,7 +154,10 @@ exports.signup = async (req, res, next) => {
         role: newUser.role,
       },
     });
-  } catch (err) {
+    } catch (err) {
+    if (err.message && err.message.includes('UNIQUE constraint failed')) {
+      return res.status(409).json({ error: 'This email or registration number is already registered.' });
+    }
     res.status(500).json({ error: err.message });
   }
 };
